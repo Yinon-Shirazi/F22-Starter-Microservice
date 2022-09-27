@@ -14,11 +14,10 @@ class ColumbiaStudentResource:
         usr = os.environ.get("DBUSER")
         pw = os.environ.get("DBPW")
         h = os.environ.get("DBHOST")
-
         conn = pymysql.connect(
-            user=usr,
-            password=pw,
-            host=h,
+            user="admin",
+            password="Usaisay1960!",
+            host="e61561.ci6gsofoisc0.us-east-1.rds.amazonaws.com",
             cursorclass=pymysql.cursors.DictCursor,
             autocommit=True
         )
